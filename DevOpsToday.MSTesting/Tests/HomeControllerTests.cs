@@ -13,5 +13,12 @@ namespace DevOpsToday.MSTesting.Tests
 
       Assert.IsNotNull(sut.Index());
     }
+    [TestMethod]
+    public void Test_ErrorAction()
+    {
+      var sut = new HomeController();
+
+      Assert.IsNotNull(sut.Error());
+    }
   }
 }
